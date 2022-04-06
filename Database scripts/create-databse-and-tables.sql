@@ -204,7 +204,7 @@ CREATE TABLE `proizvod` (
   `tip_proizvoda_id` bigint(20) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `tip_proizvoda_id_proizvod_idx` (`tip_proizvoda_id`),
-  CONSTRAINT `tip_proizvoda_id_proizvod` FOREIGN KEY (`tip_proizvoda_id`) REFERENCES `gazdinstvo_šćekić`.`proizvod` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `tip_proizvoda_id_proizvod` FOREIGN KEY (`tip_proizvoda_id`) REFERENCES `tip_proizvoda` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -403,4 +403,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-06 20:24:16
+-- Dump completed on 2022-04-06 20:40:06
